@@ -1,7 +1,3 @@
-# Portfolio
-My portfolio
+# Portfolio (WIP)
+First properly designed personal website, made with design in mind, not time, so please don't be too harsh.
 
-First properly desighned personal website made with desighn in mind not time. Please don't be too harsh.
-
-
-WIP
