@@ -1,0 +1,19 @@
+ 
+  .middle {
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .leftmid {
+    top: 40vh;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    }
+  .rightmid {
+    top: 40vh;
+    left: 80vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    }

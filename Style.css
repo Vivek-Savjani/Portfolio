@@ -43,30 +43,45 @@
                     animated-cursor 600ms steps(29,end) infinite;
         }
 
-    h2 {
-            white-space: nowrap;
-            overflow: hidden;    
-            font-family: 'Source Code Pro', monospace;  
+        h2 {
+                white-space: nowrap;
+                overflow: hidden;    
+                font-family: 'Source Code Pro', monospace;  
+                font-size: 2vmin;
+                color: rgba(0,255,0,.70);
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 10px;
+        }
+
+        p   {
             font-size: 2vmin;
-            color: rgba(0,255,0,.70);
-            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
             margin-left: 10px;
             margin-right: 10px;
         }
 
-        div
-        {
-            top: 40vh;
-            left: 50vw;
-            transform: translate(-50%, -50%);
-            position: absolute;
-            
+        .tbody {
+                height: 40vh;
+                width: 25vw;
+                font-size: 2vmin;
+                background: linear-gradient(180deg, white 10%,black 10%,black 10%);
+                outline-style: solid ;
+                outline-color: white;
+                padding-top: 0px;
+                margin-top: 0px;
         }
-    @keyframes animated-text{
-            from{width: 0;}
-            to{width: 80vw;}
-    }
-    @keyframes animated-cursor{
-            from{border-right-color: rgba(0,255,0,.75);}
-            to{border-right-color: transparent;}
-    }
+                .tbody:hover
+                {
+                    box-shadow: 0 8px 16px 16px white;
+                }
+
+        @keyframes animated-text{
+                from{width: 0;}
+                to{width: 80vw;}
+        }
+        @keyframes animated-cursor{
+                from{border-right-color: rgba(0,255,0,.75);}
+                to{border-right-color: transparent;}
+        }
+    
