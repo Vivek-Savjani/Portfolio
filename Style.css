@@ -75,11 +75,12 @@
                 outline-color: white;
                 padding-top: 0px;
                 margin-top: 0px;
+                word-wrap: break-word;
         }
                 .tbody:hover
                 {
                     box-shadow: 0 6px 12px 12px rgba(0,255,0,0.5);
-                    color: rgba(0,255,0,0.6);
+                    color: rgba(0,255,0,0.575);
                 }
 
         @keyframes animated-text{
