@@ -93,21 +93,26 @@
                     color: rgba(0,255,0,0.575);
                 }
 
-        #proj {
-            height: 40vh;
-            width: 25vw;
-            left: 50vw;
-            font-size: 4vmin;
+        .proj {
+            height: 28vh;
+            width: 30vw;
+            font-size: 2vmin;
             color: rgba(255, 255, 255, 0.7);
             background: linear-gradient(180deg, white 10%,black 10%);
             outline-style: solid ;
             outline-color: white;
-            padding-top: 0px;
-            margin-top: 0px;
+            padding-top: 2vh;
+            margin-bottom: 10vh;
+            margin-left: 3.33vh;
             word-wrap: break-word;
             overflow: hidden;
-        
-    }   
+        }
+        .wrapper {
+            margin-top: 10vh;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+          }   
 
     table, td {
         border: 1px solid white;
