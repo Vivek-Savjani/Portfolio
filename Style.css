@@ -93,6 +93,28 @@
                     color: rgba(0,255,0,0.575);
                 }
 
+        #proj {
+            height: 40vh;
+            width: 25vw;
+            left: 50vw;
+            font-size: 4vmin;
+            color: rgba(255, 255, 255, 0.7);
+            background: linear-gradient(180deg, white 10%,black 10%);
+            outline-style: solid ;
+            outline-color: white;
+            padding-top: 0px;
+            margin-top: 0px;
+            word-wrap: break-word;
+            overflow: hidden;
+        
+    }   
+
+    table, td {
+        border: 1px solid white;
+        color: white;
+      }
+                        
+                            
         @keyframes animated-text{
                 from{width: 0;}
                 to{width: 80vw;}
