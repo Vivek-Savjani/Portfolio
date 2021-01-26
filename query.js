@@ -1,22 +1,13 @@
-
-$(document).ready(function(){
-    $("button").click(function(){
-        var output = [];
-        var testarray = [,];
-        var list = 
-      $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(result){
-        $.each(result, function(i, field){
-          output.push(field);
-        });
-        console.log(output[0]);
-        console.log(output[1]);
-        console.log(output[2]);
-        document.write(output[1])
-        output.forEach(element => testarray.push(output.indexOf(element),output[output.indexOf(element)].description));
-        testarray.forEach(element => console.log(element));
-      });
-      
-    });
+$.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
+  var repo_data = '';
+  $.each(data, function(key, value){
+      repo_data += '<tr>';
+      repo_data += '<td>'+value.name+'</td>';
+      repo_data += '<td>'+value.description+'</td>';
+      repo_data += '<td>'+value.html_url+'</td>';
+      repo_data += '<td>'+ value.language+'</td>';
+      repo_data += '<tr>';
   });
-
+  $('#repo_table').append(repo_data);
+});
 
