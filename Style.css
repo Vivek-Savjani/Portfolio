@@ -92,32 +92,92 @@
                     box-shadow: 0 6px 12px 12px rgba(0,255,0,0.5);
                     color: rgba(0,255,0,0.575);
                 }
+        * {
+            box-sizing: border-box;
+            }
 
-        .proj {
-            height: 28vh;
-            width: 30vw;
-            font-size: 2vmin;
-            color: rgba(255, 255, 255, 0.7);
-            background: linear-gradient(180deg, white 10%,black 10%);
-            outline-style: solid ;
-            outline-color: white;
-            padding-top: 2vh;
-            margin-bottom: 10vh;
-            margin-left: 3.33vh;
-            word-wrap: break-word;
-            overflow: hidden;
-        }
         .wrapper {
             margin-top: 10vh;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 10px;
-          }   
+            } 
 
-    table, td {
-        border: 1px solid white;
-        color: white;
-      }
+        .projcard {
+            width: 280px;
+            height: 360px;
+            border-radius: 15px;
+            padding: 1.5rem;
+            background: black;
+            position: relative;
+            padding-top: 2vh;
+            margin-bottom: 10vh;
+            margin-left: 3.33vh;
+            word-wrap: break-word;
+            overflow: hidden;
+            border-radius: 7.5vmin;
+        }
+            .projcard:hover {
+                transform: translateY(20px);
+                box-shadow: 0 6px 12px 12px rgba(255,255,255,0.5);
+                    color: rgba(255,255,255.575);
+            }
+            .projcard:hover:before {
+                opacity: 1;
+            }
+            .projcard:hover .info {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+            .projcard:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+                background: rgba(0, 0, 0, 0.6);
+                z-index: 2;
+                transition: 0.5s;
+                opacity: 0;
+            }
+            .projcard img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 1.5vmin;
+            }
+            .projcard .info {
+                position: relative;
+                z-index: 3;
+                color: white;
+                opacity: 0;
+                transform: translateY(15vmin);
+                transition: 0.5s;
+            }
+            .projcard .info h2 {
+                font-weight:bold;
+                font-family:Source Code Pro;
+            }
+            .projcard .info p {
+                font-style: italic;
+            }
+            .projcard .info button {
+                padding: 0.6rem;
+                outline: none;
+                border: none;
+                border-radius: 3px;
+                background: white;
+                color: black;
+                font-weight: bold;
+                transition: 0.4s ease;
+            }
+    
                         
                             
         @keyframes animated-text{
