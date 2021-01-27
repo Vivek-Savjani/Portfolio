@@ -6,7 +6,7 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
           var url = "http://raw.githubusercontent.com/" +  value.full_name + "/main/images/preview.png";
           if (i == 0) {repo_data += '<div class="wrapper">'}
           repo_data += '<div class = "projcard"> ';
-          repo_data += '<<img class="repopic" src=" = '+ url+ '">';
+          repo_data += '<img src="'+url +' " onerror="this.src=`alt.png`">';
           repo_data += '<div class = "info">';
           repo_data += '<h2>'+value.full_name+'</h2>';
           repo_data += ' <p>Description: '+value.description;
@@ -27,13 +27,13 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
         var string = value.description + "no longer empty";
         var substring = "Vivek:";
         var bool = checksubstring (string,substring);
-        var url = "http://raw.githubusercontent.com/" +  value.full_name + "/main/images/prexview.png"
+        var url = "http://raw.githubusercontent.com/" +  value.full_name + "/main/images/preview.png"
         var alt = "'alt.png'"
         console.log(url);
         if (bool == true) {
           if (i == 0) {repo_data += '<div class="wrapper">'}
             repo_data += '<div class = "projcard"> ';
-            repo_data += '<img src="'+url +' ">';
+            repo_data += '<img src="'+url +' " onerror="this.src=`alt.png`">';
             repo_data += '<div class = "info">';
             repo_data += '<h2>'+value.full_name+'</h2>';
             repo_data += ' <p>Description: '+value.description;
