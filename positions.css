@@ -24,3 +24,12 @@
     transform: translate(-50%, -50%);
     position: absolute;
     }
+    .wrapper {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 5%;
+      display:grid;
+      grid-template-columns: repeat(3,1fr);
+  
+      } 

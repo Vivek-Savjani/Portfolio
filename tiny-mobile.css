@@ -36,3 +36,12 @@
             margin-left: 10px;
             margin-right: 10px;
         }
+    
+    .wrapper {
+        margin-top: 10vh;
+        margin-left: 10vh;
+        margin-right: 10vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        } 
