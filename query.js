@@ -29,8 +29,8 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
             repo_data += '<img src="'+url +' " onerror="this.src=`alt.png`">';
             repo_data += '<div class = "info">';
             repo_data += '<h2>'+value.name+'</h2>';
-            repo_data += ' <p>Description: '+value.description;
-            repo_data += '</br>'+ value.language+'</p>';
+            repo_data += ' <p>'+value.description;
+            repo_data += '</br> Language:'+ value.language+'</p>';
             repo_data += '<button onclick="window.location.href=`'+value.html_url+'`;" >Go to project page</button>';
             repo_data += '</div></div>';
             console.log(value.html_url);           

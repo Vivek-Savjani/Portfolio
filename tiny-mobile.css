@@ -36,12 +36,34 @@
             margin-left: 10px;
             margin-right: 10px;
         }
-    
-    .wrapper {
-        margin-top: 10vh;
-        margin-left: 10vh;
-        margin-right: 10vh;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        } 
+        .wrapper {
+            width: 70%;
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-top: 10%;
+            display:grid;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            grid-template-columns: repeat(1,1fr);
+            } 
+            .projcard {
+                width: 70vw;
+                height: 60vh;
+                position: relative;
+                padding-top: 2vh;
+                word-wrap: break-word;
+                overflow: hidden;
+                border-radius: 1.5vmin;
+                margin-bottom: 15vh;
+            }
+                .projcard .info h2 {
+                  font-weight:bold;
+                  font-family:Source Code Pro;
+                  font-size: 2em;
+                }
+                .projcard .info p {
+                    font-style: italic;
+                  font-size: 1.75em;
+                }
