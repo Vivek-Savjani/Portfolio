@@ -1,0 +1,60 @@
+
+
+  .middle {
+    top: 40vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .mid {
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+  .leftmid {
+    top: 50vh;
+    left: 20vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    }
+  .rightmid {
+    top: 50vh;
+    left: 80vw;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    }
+    .wrapper {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      margin-top: 5%;
+      display:grid;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      grid-template-columns: repeat(3,1fr);
+      } 
+
+        .projcard {
+          width: 18.5vw;
+          height: 45vh;
+          position: relative;
+          padding-top: 2vh;
+          word-wrap: break-word;
+          overflow: hidden;
+          border-radius: 1.5vmin;
+          margin-bottom: 15vh;
+        }
+
+          .projcard .info h2 {
+            font-weight:bold;
+            font-family:Source Code Pro;
+            font-size: 2em;
+          }
+          
+          .projcard .info p {
+              font-style: italic;
+            font-size: 1em;
+          }

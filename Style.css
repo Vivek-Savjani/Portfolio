@@ -6,35 +6,34 @@
             overflow: hidden;
             background-color: black;
         }    
-        li {
-            float: left;
-        }
+            li {
+                float: left;
+            }
+                
+            li a {
+                display: block;
+                color: rgba(0,255,0,.70);
+                text-align: center;
+                text-emphasis: bold;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+                li a:hover {
+                    background-color: #111;
+                }
 
-        .bugs{
-            float: right;
-            background-color: rgba(255, 0,0, 0.7);
-        }
-        .bugs a
-        {
-            color:rgba(255, 255, 255, 1) !important;
-        }
-            
-        li a {
-            display: block;
-            color: rgba(0,255,0,.70);
-            text-align: center;
-            text-emphasis: bold;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-            
-        li a:hover {
-            background-color: #111;
-        }
-        
+            .bugs{
+                float: right;
+                background-color: rgba(255, 0,0, 0.7);
+            }
+                .bugs a
+                {
+                    color:rgba(255, 255, 255, 1) !important;
+                }
+                
         body {
                 background-color: black;
-
                 background-size: cover;
         }
      
@@ -75,6 +74,7 @@
             margin-right: 10px;
             color: rgba(0,0,0,.70);
         }
+
         .tbody {
                 height: 40vh;
                 width: 25vw;
@@ -86,7 +86,7 @@
                 padding-top: 0px;
                 margin-top: 0px;
                 word-wrap: break-word;
-        }
+            }
                 .tbody:hover
                 {
                     box-shadow: 0 6px 12px 12px rgba(0,255,0,0.5);
@@ -106,18 +106,22 @@
             border-radius: 1.5vmin;
             margin-bottom: 15vh;
         }
+
             .projcard:hover {
                 transform: translateY(20px);
                 box-shadow: 0 6px 12px 12px rgba(255, 255, 255, 0.7);
                 color: rgba(255,255,255.575);
             }
-            .projcard:hover:before {
-                opacity: 1;
-            }
-            .projcard:hover .info {
-                opacity: 1;
-                transform: translateY(0px);
-            }
+
+                .projcard:hover:before {
+                    opacity: 1;
+                }
+
+                .projcard:hover .info {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+
             .projcard:before {
                 content: "";
                 position: absolute;
@@ -132,6 +136,7 @@
                 opacity: 0;
                 background-image: linear-gradient(180deg, rgba(0,0,0,0.9)20%,rgba(0,0,0,0.8)40%,rgba(0,0,0,0.7)60%,rgba(0,0,0,0.6)80%,rgba(0,0,0,0.5)90%,rgba(0,0,0,0.4)100%) ;
             }
+
             .projcard img {
                 width: 100%;
                 height: 100%;
@@ -151,26 +156,23 @@
                 transform: translateY(15vmin);
                 transition: 0.5s;
                 text-align: center;
-
-                
             }
           
-            .projcard .info button {
-                padding: 0.6em;
-                outline: none;
-                border: none;
-                border-radius: 3px;
-                background: rgba(255, 255, 255, 0.7);
-                color: rgba(0,0,0,.70);
-                font-weight: bold;
-                transition: 0.4s ease;
-               
-            }              
-            
-            .projcard .info button:hover{
-                background: rgba(0,0,0,.70);
-                color: rgba(255, 255, 255, 0.7);
-            }
+                .projcard .info button {
+                    padding: 0.6em;
+                    outline: none;
+                    border: none;
+                    border-radius: 3px;
+                    background: rgba(255, 255, 255, 0.7);
+                    color: rgba(0,0,0,.70);
+                    font-weight: bold;
+                    transition: 0.4s ease;
+                }              
+                    
+                    .projcard .info button:hover{
+                        background: rgba(0,0,0,.70);
+                        color: rgba(255, 255, 255, 0.7);
+                    }
 
         @keyframes animated-text{
                 from{width: 0;}
