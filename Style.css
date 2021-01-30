@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         ul {
             list-style-type: none;
             margin: 0;
@@ -63,38 +64,47 @@
                 margin-right: 10px;
         }
 
-        p   {
-            font-size: 2vmin;
+        P{
             margin-left: 10px;
             margin-right: 10px;
-        }
-        ptitle {
+            font-family: 'Roboto', sans-serif;
+            color: rgba(255, 255, 255, 0.8);
             font-size: 2vmin;
-            margin-left: 10px;
-            margin-right: 10px;
-            color: rgba(0,0,0,.70);
         }
 
-        .tbody {
-                height: 40vh;
-                width: 25vw;
-                font-size: 2vmin;
-                color: rgba(255, 255, 255, 0.7);
-                background: linear-gradient(180deg, white 10%,black 10%);
-                outline-style: solid ;
-                outline-color: white;
-                padding-top: 0px;
-                margin-top: 0px;
-                word-wrap: break-word;
-            }
-                .tbody:hover
+        
+
+                .t .top-bar {
+                    height: 6%;
+                    max-height: 25px;
+                    border-radius: 5px 5px 0 0;
+                    background-color:rgba(255, 255, 255, 0.685);
+                    display:flex;
+                    justify-content: flex-end;
+                }
+
+                .t .window {
+                    margin: 0.5vh 0.2vw;
+                }
+                  
+                .t .content {
+                    width: 100%;
+                    height:94%;
+                    display: inline-block;
+                    border-radius: 0 0 5px 5px;
+                    border-bottom:rgba(255, 255, 255, 1);
+                    background-color: rgba(0,0,0,1);
+                   
+                }              
+                
+                .t:hover
                 {
                     box-shadow: 0 6px 12px 12px rgba(0,255,0,0.5);
-                    color: rgba(0,255,0,0.575);
                 }
+
         * {
-            box-sizing: border-box;
-            }
+            box-sizing: border-box; 
+        }
 
         .projcard {
             width: 18.5vw;
