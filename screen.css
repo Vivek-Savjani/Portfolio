@@ -27,6 +27,26 @@
         background-color: rgba(255, 255, 255, 1);
         box-shadow: 0 0 0 0.4vmin rgba(255, 255, 255, 0.9);
         }
+
+        P.text{
+          margin-left: 10px;
+          margin-right: 10px;
+          font-family: 'Roboto', sans-serif;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 2vmin;
+      }
+
+      h2.title {
+        white-space: nowrap;
+        overflow: hidden;    
+        font-family: 'Source Code Pro', monospace;  
+        font-size: 2.2vmin;
+        color: rgba(0,255,0,.70);
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
     .wrapper {
       width: 90%;
       margin-left: 5%;
