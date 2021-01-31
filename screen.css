@@ -6,24 +6,6 @@
     transform: translate(-50%, -50%);
     position: absolute;
   }
-  .mid {
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    position: absolute;
-  }
-  .leftmid {
-    top: 50vh;
-    left: 20vw;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    }
-  .rightmid {
-    top: 50vh;
-    left: 80vw;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    }
     
   .twrapper{
       width: 100%;
@@ -56,6 +38,7 @@
       justify-items: center;
       text-align: center;
       grid-template-columns: repeat(3,1fr);
+      position: absolute;
       } 
 
         .projcard {

@@ -12,7 +12,7 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
           repo_data += '<button onclick="window.location.href=`'+value.html_url+'`;" >Go to project page</button>';
           repo_data += '</div></div>';
         });
-        $('#repo_table').append(repo_data);
+        $('#repo_table').prepend(repo_data);
     });
     $.getJSON("https://api.github.com/users/CSCoursework/repos", function(data){
       var repo_data = '';
@@ -32,7 +32,7 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
             repo_data += '</div></div>';
         }
         });
-     $('#repo_table').append(repo_data);
+     $('#repo_table').prepend(repo_data);
  });
   
 

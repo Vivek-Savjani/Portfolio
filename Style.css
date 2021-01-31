@@ -37,7 +37,7 @@
                 background-color: black;
                 background-size: cover;
         }
-     
+
         h1 {
                 border-right: solid 3px rgba(0,255,0,.75);
                 white-space: nowrap;
@@ -94,7 +94,6 @@
                     border-radius: 0 0 5px 5px;
                     border-bottom:rgba(255, 255, 255, 1);
                     background-color: rgba(0,0,0,1);
-                   
                 }              
                 
                 .t:hover
@@ -102,6 +101,9 @@
                     box-shadow: 0 6px 12px 12px rgba(0,255,0,0.5);
                 }
 
+                .tpad{
+                    height:10vh;
+                }
         * {
             box-sizing: border-box; 
         }

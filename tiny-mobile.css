@@ -1,22 +1,4 @@
     
-    .leftmid {
-        top: 40vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        position: absolute;
-    }
-    .mid {
-        top: 60vh;
-        left: 50vw;
-        transform: translate(-50%, -50%);
-        position: absolute;
-    }
-    .rightmid {
-    top: 80vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    }
 
     .wrapper {
         width: 70%;
