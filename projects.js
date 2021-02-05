@@ -35,11 +35,15 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
      $('#repo_table').prepend(repo_data);
  });
   
- $(window).on("load",function(){
-
-  var ldfdgfoad = document.getElementById("loadpage-wrap");
-  ldfdgfoad.display = "none";
-});
+var myvar;
+function pageload() {
+  myVar = setTimeout(swapelements, 3000);
+}
+function swapelements() {
+  document.getElementById("loadpage-wrap").style.display = "none";
+  document.getElementById("nav").style.display = "block";
+  document.getElementById("content").style.display="block";
+}
     
 function checksubstring(string,substring)  {return (string.indexOf(substring) !== -1)}
 

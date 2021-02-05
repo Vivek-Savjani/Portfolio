@@ -9,8 +9,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src = "projects.js"></script>
 <script src = "navbar.js"></script>
-<head>
-    <div class = "loadpage-wrap" id = "loadpage-wrap">
+
+<head >
+    <div id = "loadpage-wrap">
         <div class= "loadwrap">
             <p2 class = "bracket">[</p2>
             <div class = "hashwrap"><p1 class = "loading">################################################################################################################</p1></div>
@@ -20,7 +21,7 @@
             </div>
         </div>
     </div>
-<ul>
+<ul id = "nav" style="display:none;">
     <li style = "width: fit-content; display: inline-block;"><a href="index.html">root@Vivek: ~/</a></li>
     <li style = "width: fit-content; display: inline-block; float: right;"><a href="javascript:void(0);" class="icon" onclick="navbar()"><b>≡</b></a></li>
      <div id="navitems">
@@ -31,8 +32,8 @@
 </ul>
 </head>
 <html>
-<body>
-    <div>
+<body onload="pageload()" style="margin:0;">
+    <div id = "content" style = "display: none;">
         <div id="repo_table" class="wrapper"><div style = "padding: 2.5vh;"></div></div>
         
     </div>
