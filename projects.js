@@ -35,6 +35,12 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
      $('#repo_table').prepend(repo_data);
  });
   
+ $(window).on("load",function(){
 
+  var ldfdgfoad = document.getElementById("loadpage-wrap");
+  ldfdgfoad.display = "none";
+});
     
 function checksubstring(string,substring)  {return (string.indexOf(substring) !== -1)}
+
+
