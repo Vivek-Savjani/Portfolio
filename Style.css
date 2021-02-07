@@ -94,12 +94,12 @@
                     font-family: 'Roboto', sans-serif;
                 }        
                 
-                input[type=text], select{
+                input[type=text], select,textarea{
                     width: 95%;
                     padding: 12px;
-                    border-bottom: 1px solid rgba(0,255,0,1);
                     border-radius: 4px;
-                    margin-top: 6px;
+                    border: none;
+                    border-bottom: 1px solid rgba(0,255,0,1);
                     margin-bottom: 16px;
                     background-color:transparent;
                     color:white;
@@ -110,15 +110,23 @@
                   input[type=email], select, textarea {
                     width: 95%;
                     padding: 12px;
-                    border-bottom: 1px solid #ccc;
                     border-radius: 4px;
+                    border: none;
+                    border-bottom: 1px solid rgba(0,255,0,1);
                     box-sizing: border-box;
-                    margin-top: 6px;
                     margin-bottom: 16px;
                     resize: vertical;
                     background-color:transparent;
                     color:white;
                     
+                  }
+
+                  input[type=submit]{
+                      color: rgba(255, 255, 255, 1);
+                      background-color: rgba(0,0,0,1);
+                      border-color: rgba(0,255,0,1);
+                      border-radius: 4px;
+                      margin-top: 10px;
                   }
                 
                 .t:hover
