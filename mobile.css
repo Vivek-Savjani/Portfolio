@@ -58,6 +58,7 @@ ul {
             text-align: left;
             width: 75vw;
             height: 40vh;
+            min-height: 350px;
             margin-bottom: 5vh;
             display: inline-block;
             border-radius: 5px;
@@ -71,14 +72,14 @@ ul {
                 margin-right: 10px;
                 font-family: 'Roboto', sans-serif;
                 color: rgba(255, 255, 255, 0.8);
-                font-size: 2vmin;
+                font-size: 16px;
             }
 
             h2.title {
                 white-space: nowrap;
                 overflow: hidden;    
                 font-family: 'Source Code Pro', monospace;  
-                font-size: 2.2vmin;
+                font-size:18px;
                 color: rgba(0,255,0,.70);
                 text-align: center;
                 margin-left: 10px;
