@@ -63,6 +63,7 @@
         width: 25vw;
         height: 50vh;
         min-height: 365px;
+        min-width: 350;
         display: inline-block;
         border-radius: 5px;
         background-color: rgba(255, 255, 255, 1);
@@ -75,7 +76,7 @@
         margin-right: 10px;
         font-family: 'Roboto', sans-serif;
         color: rgba(255, 255, 255, 0.8);
-        font-size: 14px;
+        font-size: 16px;
     }
 
       h2.title {

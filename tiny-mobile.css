@@ -63,7 +63,7 @@ ul {
             white-space: nowrap;
             overflow: hidden;    
             font-family: 'Source Code Pro', monospace;  
-            font-size: 18px;
+            font-size: 17px;
             color: rgba(0,255,0,.70);
             text-align: center;
             margin-left: 10px;
@@ -74,7 +74,7 @@ ul {
                 margin-right: 10px;
                 font-family: 'Roboto', sans-serif;
                 color: rgba(255, 255, 255, 0.8);
-                font-size: 16px;
+                font-size: 15;
                 word-wrap: break-word;
             }
 
