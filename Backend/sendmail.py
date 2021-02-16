@@ -10,8 +10,10 @@ def data():
     password = ""
     email = ""
     mail.login(email,password)
-    mail.sendmail(email,email,"test18")
+    sentby = request.args.get('email')
+    ##mail.sendmail(email,email,sentby)
     mail.close()
+    print(sentby)
     return "test19"
 
 if __name__ == '__main__':
