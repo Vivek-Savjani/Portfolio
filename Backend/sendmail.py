@@ -20,7 +20,8 @@ def data():
     message['To'] = email
     message['From'] = email
     message['Subject'] = f"A message from {sentby} <{sentbyemail}> via portfolio form"
-    message['Message'] = messagebody
+    messagebody= MIMEText(messagebody)
+    message.attach(messagebody)
     mail.sendmail(email,email,message.as_string())
     mail.close()
     print(sentby)
