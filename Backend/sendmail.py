@@ -1,8 +1,7 @@
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from email.mime.application import MIMEApplication
-from flask import Flask,request,render_template
+from flask import Flask,request,redirect
 app = Flask(__name__)
 
 @app.route('/data/', methods=['POST','GET'])
@@ -27,12 +26,9 @@ def data():
     print(sentby)
     print(messagebody)
     print(message.as_string())
-    return "test19"
+    return redirect("http://127.0.0.1:5500/Vivek.html") 
 
-if __name__ == '__main__':
-    app.run(host='127.0.0.1', port='8000', debug=True)
-
-
+##run flask local server
 ##set FLASK_APP=sendmail.py
 ##py -m flask run
 ##set FLASK_ENV=development
