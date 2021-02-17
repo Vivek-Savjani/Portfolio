@@ -109,10 +109,11 @@
                     margin-bottom: 32px;
                     background-color:transparent;
                     color:white;
-                    
                   }
                   
-                  
+                  input[type=text]textarea{
+                      min-height: 100px;
+                  }
                   input[type=email], select, textarea {
                     width: 95%;
                     border-radius: 4px;
@@ -131,7 +132,7 @@
                       background-color: rgba(0,0,0,1);
                       border-color: rgba(0,255,0,1);
                       border-radius: 4px;
-                      margin-top: 32px;
+                      margin-top: 16px;
                   }
                 
                 .t:hover
