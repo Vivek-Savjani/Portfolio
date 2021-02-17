@@ -1,19 +1,31 @@
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
 from flask import Flask,request,render_template
 app = Flask(__name__)
 
-@app.route('/data', methods=['POST','GET'])
+@app.route('/data/', methods=['POST','GET'])
 def data():
-    print("works here")
-    import smtplib
     mail = smtplib.SMTP(host = "smtp.gmail.com")
-    mail.starttls()
-    password = ""
+    mail.starttls()    
     email = ""
+    password = ""
     mail.login(email,password)
-    sentby = request.args.get('email')
-    ##mail.sendmail(email,email,sentby)
+    sentby = request.args.get('name')
+    sentbyemail = request.args.get('email')
+    messagebody = request.args.get('message')
+    message = MIMEMultipart()
+    message.set_charset("utf-8")
+    message['To'] = email
+    message['From'] = email
+    message['Subject'] = f"A message from {sentby} <{sentbyemail}> via portfolio form"
+    message['Message'] = messagebody
+    mail.sendmail(email,email,message.as_string())
     mail.close()
     print(sentby)
+    print(messagebody)
+    print(message.as_string())
     return "test19"
 
 if __name__ == '__main__':
