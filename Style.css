@@ -149,6 +149,7 @@
             width: 18.5vw;
             height: 45vh;
             min-height: 350px;
+            min-width: 340px;
             position: relative;
             padding-top: 2vh;
             word-wrap: break-word;
