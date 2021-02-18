@@ -51,28 +51,27 @@
             <h2 class = "title">About_Me</h2>
             <p class = "text">root@Vivek:~/Documents/Personal/# cat About_Me.txt</br></br>
             Hi, my name is Vivek and I am currently enrolled as an a-level student at NSB - currently rated one of the top sixth forms in the country - 
-            and I hope to go into a computer science based field (preferably cyber security). Some interesting facts about me are that: 
+            and I hope to go into a computer science based field (preferably cyber security).</br></br> Some interesting facts about me are that: 
             my favourite food is Chilli Paneer,  I love hearing (and learning) random facts and I have been crowned the undisputed typo king.</p>
             </div>
         </div>
 
-           <div class='t'>
+          <div class='t'>
             <div class='top-bar'>
               <div class='window'>
                 - □	x
               </div>
             </div>
             <div class='content'>
-              <h2 class = "title">Contact_Info</h2>
-              <p class = "text"></br>root@Vivek:~/Documents/Personal/# cat contact_info.txt</br></br>
-                If you would like to contact me for a job offer, issue a bug report 
-                or even just a good conversation I have left some details below:</br>
-                </br>
-                Email: Viveknsavjani@gmail.com</br>
-                Discord: vns#8191</br>
-            </p>
-            </div>
-            </div>
+              <h2 class ="title">Contact Me:</h2>
+              <form action="http://127.0.0.1:5000/data/" method="POST">
+                <input type="text" id="name" name="name" placeholder="Your name..." required>
+                <input type="email" id="email" name="email" placeholder="Your Email adress..." required>
+                <textarea style="height:100px" type="text" id="message" name="message" placeholder="Write something..."  required></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div> 
+          </div>
             <div style = "padding: 2.5vh;"></div>
     </div>
     
