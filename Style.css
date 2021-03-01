@@ -69,7 +69,9 @@
                 margin-right: 10px;
         }
 
-
+        .t{
+            min-width: 350px;
+        }
                 .t .top-bar {
                     height: 6%;
                     max-height: 25px;
@@ -106,7 +108,7 @@
                     border-radius: 4px;
                     border: none;
                     border-bottom: 1px solid rgba(0,255,0,1);
-                    margin-bottom: 32px;
+                    margin-bottom: 25px;
                     background-color:transparent;
                     color:white;
 
@@ -118,7 +120,7 @@
                     border: none;
                     border-bottom: 1px solid rgba(0,255,0,1);
                     box-sizing: border-box;
-                    margin-bottom: 32px;
+                    margin-bottom: 25px;
                     resize: vertical;
                     background-color:transparent;
                     color:white;
@@ -130,7 +132,6 @@
                       background-color: rgba(0,0,0,1);
                       border-color: rgba(0,255,0,1);
                       border-radius: 4px;
-                      margin-top: 16px;
                   }
                 
                 .t:hover
