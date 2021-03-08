@@ -6,8 +6,8 @@ app = Flask(__name__)
 @app.route('/data/', methods=['POST','GET'])
 def data():
     mail = smtplib.SMTP_SSL("smtp.gmail.com",465)
-    email = "vivekportfoliocontact@gmail.com"
-    password = "EPcz$RKYJ#JQ*QF-79Mnx__kFyS^QnVCR+5&MV6?PugLa3HDBAuS^5!4&Q^As9D85j+khKLYBm?LGDQqrRpzrguTYPt?8=YcH2%v"
+    email = ""
+    password = ""
     mail.login(email,password)
     sentby = request.form['name']
     sentbyemail = request.form['email']
