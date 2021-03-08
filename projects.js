@@ -2,7 +2,7 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
         var repo_data = '';
         
         $.each(data, function(key, value){
-          var url = "http://raw.githubusercontent.com/" +  value.full_name + "/main/images/preview.png";
+          var url = "https://raw.githubusercontent.com/" +  value.full_name + "/main/images/preview.png";
           repo_data += '<div class = "projcard"> ';
           repo_data += '<img src="'+url +' " onerror="this.src=`alt.png`" alt = `project image`>';
           repo_data += '<div class = "info">';
@@ -20,7 +20,7 @@ $.getJSON("https://api.github.com/users/Vivek-Savjani/repos", function(data){
         var string = value.description + "no longer empty";
         var substring = "Vivek:";
         var bool = checksubstring (string,substring);
-        var url = "http://raw.githubusercontent.com/" +  value.full_name + "/main/images/preview.png";
+        var url = "https://raw.githubusercontent.com/" +  value.full_name + "/main/images/preview.png";
         if (bool == true) {
             repo_data += '<div class = "projcard"> ';
             repo_data += '<img src="'+url +' " onerror="this.src=`alt.png`" alt = `project image`>';
