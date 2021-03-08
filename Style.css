@@ -68,7 +68,11 @@
                 margin-left: 10px;
                 margin-right: 10px;
         }
-
+        .mid-wrap{
+            height: 100%;
+            width: 100%;
+            position: relative;
+        }
         .t{
             min-width: 350px;
         }
